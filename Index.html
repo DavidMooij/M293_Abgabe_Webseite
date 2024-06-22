@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>David Mooijman</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="myScript.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header ------------------------------------------------------------------------------------------------------------- Header -->
+<header id="mainHeader">
+    <div class="header-container">
+        <a href="#home" class="logo">
+            <p class="letter-d">
+                D
+            </p>
+            <p class="letter-m">
+                M
+            </p>
+        </a>
+        <div class="navigation">
+            <a href="#home">Home</a>
+            <a href="#about-me">About Me</a>
+            <a href="#project">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</header>
+
+<div class="main">
+    <!-- Home ----------------------------------------------------------------------------------------------------------- Home -->
+    <div id="home" class="home-section">
+        <div class="intro">
+            <h4 class="h4-first">Hello World, I'm</h4>
+            <h1>David Mooijman();</h1>
+            <h4 class="h4-second">Software Developer</h4>
+        </div>
+        <img class="image-self" src="Images/MyProfile.png" loading="lazy" alt="Something went wrong with your browser">
+    </div>
+
+    <div id="about-me" class="about-me-section">
+        <div class="about-me-box">
+            <div class="about-me-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-me-content">
+                <div class="circle">
+                    <img class="image-self" loading="lazy" src="Images/MyProfile.png"
+                         alt="Something went wrong with your browser">
+                </div>
+                <p>
+                    I'm a 16-year-old software developer.
+                    I have experience in different programming languages and have worked on several projects by myself
+                    and with others.
+                    I'm currently in an apprenticeship, improving my skillset. I love coding and always want to learn
+                    more.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects ------------------------------------------------------------------------------------------------------- Projects -->
+    <div id="project" class="project-section">
+        <div class="title">
+            <h1>Projects</h1>
+        </div>
+
+        <div class="project1">
+            <div class="image-chessX">
+                <img src="Images/ChessX%20Image.jpg" alt="Something went wrong with your browser">
+                <img src="Images/chessX2.jpg" alt="Something went wrong with your browser">
+                <img src="Images/ChessX%20Image.jpg" alt="Something went wrong with your browser">
+                <img src="Images/chessX2.jpg" alt="Something went wrong with your browser">
+
+                <div class="control-arrows">
+                    <button id="previous" class="previous-button">‹</button>
+                    <button id="next" class="next-button">›</button>
+                </div>
+            </div>
+            <div class="project-content-ChessX">
+                <p>
+                    My team and I developed a chess application using Java.
+                    It includes extra features like importing and exporting games,
+                    customizable colors, and different chess piece designs.
+                    This project helped us improve our coding skills and work effectively as a team.
+                </p>
+                <h2>ChessX</h2>
+            </div>
+        </div>
+
+        <div class="project2">
+            <div class="project-content-LED">
+                <h2>LED RGB</h2>
+                <p>
+                    A colleague and I cut apart LED RGB strips, connected them to an Arduino
+                    and wrote a program to display text, symbols, and various animations.
+                    We hung it in a window to wish the entire company a Merry Christmas.
+                </p>
+            </div>
+            <div class="image-led-container">
+                <img class="image-LED" loading="lazy" src="Images/LEG%20RGB.jpg"
+                     alt="Something went wrong with your browser">
+                <button class="popup-button">Play Video</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-popup" id="videoPopup">
+        <div class="popup-content">
+            <span class="close-popup" id="closePopup">&times;</span>
+            <!-- Das "&times" steht für ein X-->
+            <video id="popupVideo" src="Images/LED's%20in%20action.MOV" controls muted></video>
+        </div>
+    </div>
+
+    <!-- Skills --------------------------------------------------------------------------------------------------------- Skills -->
+    <div id="skills" class="skills-section">
+        <div class="title">
+            <h1>Skills</h1>
+        </div>
+        <div class="skills-box">
+            <div class="grid-container">
+                <div class="grid-item-1">
+                    <p>Java</p>
+                </div>
+
+                <div class="grid-line-1">
+                    <p>90%</p>
+                </div>
+
+                <div class="grid-item-2">
+                    <p>HTML</p>
+                </div>
+
+                <div class="grid-line-2">
+                    <p>70%</p>
+                </div>
+
+                <div class="grid-item-3">
+                    <p>C</p>
+                </div>
+
+                <div class="grid-line-3">
+                    <p>75%</p>
+                </div>
+
+                <div class="grid-item-4">
+                    <p>SQL</p>
+                </div>
+
+                <div class="grid-line-4">
+                    <p>80%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Box mit Pfeil -------------------------------------------------------------------------------------------------- Box mit Pfeil -->
+    <div class="box-section">
+        <div class="text-box">
+            <p>Let's create something <span class="amazing-text">amazing</span> together</p>
+            <div class="arrow-line"></div>
+            <div class="arrow-down"></div>
+        </div>
+    </div>
+
+    <!-- Contact -------------------------------------------------------------------------------------------------------- Contact -->
+    <div id="contact" class="contact-section">
+        <div class="contact">
+            <div class="title">
+                <h1>Get in Touch</h1>
+            </div>
+            <div class="contact-background">
+                <div class="contact-box">
+                    <form class="contact-form" action="">
+                        <div class="name-inputs">
+                            <div class="name">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="name">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                        </div>
+                        <label for="email">Email-Address</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6"></textarea>
+
+                        <input type="submit" value="Send Message">
+
+                        <div class="myEmail">
+                            <a href="mailto: lukas.muellerman@gmail.com">Lukas.Muellerman@gmail.com</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer ------------------------------------------------------------------------------------------------------------- Footer-->
+<footer>
+    <div class="footer-container">
+        <a href="#home" class="logo">
+            <p class="letter-d">
+                D
+            </p>
+            <p class="letter-m">
+                M
+            </p>
+        </a>
+        <div class="footer-social-icons">
+            <a href="https://www.instagram.com/david___dave/?igsh=MWg2MTdjY2Z3NmcyZA%3D%3D">
+                <img src="Images/Instagram Logo.jpg" alt="Instagram">
+                <img src="Images/facebook Icon.png" alt="Facebook">
+                <!-- Ich habe kein FaceBook, deshalb leite ich einfach bei beiden auf Instagram -->
+            </a>
+        </div>
+        <div class="navigation">
+            <a href="#home">Home</a>
+            <a href="#about-me">About Me</a>
+            <a href="#project">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
